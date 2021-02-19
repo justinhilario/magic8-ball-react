@@ -37,47 +37,9 @@ h4{
   display: inline-block;
   font-size: 45px;
   text-align: center;
-  position: absolute;
   animation: appear 2s;
-  left: 315px;
   font-family: 'Montserrat', sans-serif;
 }
-@keyframes appear {
-  from {
-    left: -800px;
-  }
-  to {
-    left: 315px;
-  }
-}
-@-moz-keyframes appear {
-  /* Firefox */
-  from {
-    left: -800px;
-  }
-  to {
-    left: 315px;
-  }
-}
-@-webkit-keyframes appear {
-  /* Safari and Chrome */
-  from {
-    left: -800px;
-  }
-  to {
-    left: 315px;
-  }
-}
-@-o-keyframes appear {
-  /* Opera */
-  from {
-    left: -800px;
-  }
-  to {
-    left: 315px;
-  }
-}
-
 
 
 button{
