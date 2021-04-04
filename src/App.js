@@ -6,20 +6,16 @@ class App extends React.Component {
     super(props)
     this.state = {
       // Add magic 8 ball outcomes to the array
-      answerArray: ["yes", "no", "better luck next time", "maybe so"],
-      question: ""
+      answerArray: ["NO SUCKA!", "IS THAT A WISH!", "DON'T GET ALL HYSTERICAL.", "SAY THANK YOU FOR YOUR MIRACLE!", "HOW DARE YOU WAKE ME!", "I'M SORRY THAT'S BEEN DONE."],
+      question:""
     }
   }
 
   getAnswer = () => {
     // destructures answerArray out of state
     const { answerArray } = this.state
-    // write your code here!
-    let anything = this.state.answerArray
-    // Math.floor(Math.random()* anything.length)
-    // Update the return statement below to reflect the outcome of your code.
-    return Math.floor(Math.random()* anything.length)
-    // Math.floor(Math.random() * (this.state.answerArray.length))
+    let randomAnswer = Math.floor(Math.random() * 7)
+    return answerArray[randomAnswer]
   }
 
   handleChange = (e) => {
@@ -38,7 +34,12 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <h1>Magic 8 Ball</h1>
+        <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yatra+One&display=swap" rel="stylesheet"/>
+        </head>
+        <h1>I AM KAZAAM!</h1>
+        <p> { this.state.answer } </p>
         <input
           id="inputBox"
           type='text'
@@ -46,9 +47,12 @@ class App extends React.Component {
         />
         <br />
         <button onClick={ this.handleSubmit }>
-          Ask the Magic 8 Ball a Question
+          BELLY
         </button>
-        <p> { this.state.answer } </p>
+        <br/>
+        <br/>
+        <h4>MAKE A WISH AND CLICK MY BELLY!</h4>
+        <br />
       </div>
     )
   }

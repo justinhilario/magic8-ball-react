@@ -1,10 +1,54 @@
 body{
-  margin: 1%;
-  text-align:center;
-  font-family: 'Anton', sans-serif;
+  margin: 0%;
+  text-align: center;
+  font-family: 'Yatra One', cursive;
   height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://d23.com/app/uploads/2015/07/kazaam-film-1180x600-1180x600.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 h1{
-  text-decoration: underline;
-  font-size: 40px;
+  font-size: 150px;
+  color: lightgreen;
+}
+
+h4{
+  text-decoration:;
+  font-size: 30px;
+  color: white;
+}
+
+input{
+  width: 49%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+p{
+  color:yellow;
+  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h4{
+  display: inline-block;
+  font-size: 45px;
+  text-align: center;
+  animation: appear 2s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+button{
+  font-family: 'Montserrat', sans-serif;
+  color: lightgreen;
+  border:Lightgreen;
+  font-size:37px;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background-color: #4CAF50; /* Green */
+  width:50%; 
 }
